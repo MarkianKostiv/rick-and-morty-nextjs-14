@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.link-style {
+  position: relative;
+}
+
+.link-style::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.link-style-disabled::after {
+  background-color: #8e8e93;
+}
+.link-style-active::after {
+  background-color: #007bff;
+}
+
+/* Стилі при наведенні миші, для підвищення підкреслення */
+.link-style:hover::after {
+  background-color: #007bff;
+  transform: scaleY(2);
+  transform-origin: bottom;
+}
+
+.w-31-rem {
+  width: 31rem;
+}

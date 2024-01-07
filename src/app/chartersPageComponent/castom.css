@@ -1,0 +1,34 @@
+/* і цьому файлі прописуються стилі, які не можливо, або дуже важко передати в tailwind, а також, які
+можуть займати забагато місця в класнеймі */
+.castom-shadow {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.btn-castom {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.scrollbar-hide::-webkit-scrollbar {
+  /* WebKit (Chrome, Safari, Edge) */
+  display: none;
+  scrollbar-width: thin; /* Firefox */
+}
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+}
+.filters::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.castom-top {
+  top: 57%;
+}
